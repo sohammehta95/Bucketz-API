@@ -15,15 +15,19 @@ var userSchema = new mongoose.Schema({
         default: "N/A"
     },
     buckets: {
-        gas: { type: Number, default: 0      },
-        entertainment: { type: Number, default: 0 },
-        rent: { type: Number, default: 0 },
-        utility : {
-            electricity: Number,
-            mobile: Number,
-            laundry: Number,
-            wifi: Number
-        }
+        bankFees: { type: Number, default: 0      },
+        cashAdvance: { type: Number, default: 0 },
+        community: { type: Number, default: 0 },
+        foodAndDrink: { type: Number, default: 0 },
+        healthcare: { type: Number, default: 0 },
+        interest: { type: Number, default: 0 },
+        payment: { type: Number, default: 0 },
+        recreation: { type: Number, default: 0 },
+        service: { type: Number, default: 0 },
+        shops: { type: Number, default: 0 },
+        tax: { type: Number, default: 0 },
+        transfer: { type: Number, default: 0 },
+        travel: { type: Number, default: 0 } 
     },
     created_date: {
         type: Date,
