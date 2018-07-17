@@ -97,7 +97,7 @@ table{
   -moz-border-radius:6px;
  }
 .tbl-content{
-  height:300px;
+  height:500px;
   overflow-x:auto;
   margin-top: 0px;
   border: 1px solid rgba(255,255,255,0.3);
