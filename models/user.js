@@ -1,6 +1,10 @@
 var mongoose = require('mongoose');
 
 var userSchema = new mongoose.Schema({
+	senderId: {
+        type: String,
+        default: "N/A"
+    },
     name: String,
     email:String,
     company: String,
