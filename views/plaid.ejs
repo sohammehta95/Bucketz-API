@@ -1,0 +1,54 @@
+<head>
+    <link rel="stylesheet" href="plaid.css" type="text/css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Bucketz<span>PLAID</span></h1>
+    <h2>Connecting the Bank</h2>
+  </header>
+  
+  <div id="container">
+    <div class = "center-buttons">
+      <button id="link-btn">Link Account</button>
+    </div>
+  </div>
+
+  <div id="app">
+    <div class="box">
+      <div class = "center-buttons">
+      <button id="get-accounts-btn">Get Accounts</button>
+      </div>
+      <div id="get-accounts-data"></div>
+    </div>
+
+    <div class="box">
+      <div class = "center-buttons">
+      <button id="get-item-btn">Get Item</button>
+      </div>
+      <div id="get-item-data"></div>
+    </div>
+
+    <div class="box">
+      <div class = "center-buttons">
+      <button id="get-transactions-btn">Get Transactions</button>
+      </div>
+      <div id="get-transactions-data"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
+  <script>
+       var publickey = '<%= PLAID_PUBLIC_KEY %>';
+       var plaidenv = '<%= PLAID_ENV %>';
+  </script>
+  <script type="text/javascript" src="plaidscript.js"></script>
+  
+  
+</body>
