@@ -6,7 +6,7 @@
     //Grab the SenderId
     var curr_url = new URL(url);
     var senderId = curr_url.searchParams.get("senderId");
-    //console.log(senderId);
+    console.log("The sender Id is: " + senderId);
     
     var handler = Plaid.create({
       apiVersion: 'v2',

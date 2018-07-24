@@ -53,6 +53,15 @@ router.get('/id/:id', function(req, res, next) {
   });
 });
 
+router.get('/sender/:id', function(req, res, next) {
+  db.Plaid.find({senderId: req.params.id},function(err,foundUser){
+    if(err)
+    res.json({error: true});
+    else
+    res.json(foundUser);
+  });
+});
+
 //After the Link Account Button is pressed
 router.post('/get_access_token', function(request, response, next) {
   
