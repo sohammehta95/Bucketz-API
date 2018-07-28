@@ -24,7 +24,10 @@
               
               $.post('/plaid/get_all', { access_token: data.ACCESS_TOKEN, item_id:data.ITEM_ID, senderId:senderId}, function(data){
                 console.log("Got it all baby!");
+                window.location.replace("https://www.bucketzapp.com/close");
               });
+              
+              
               //CSS Stuff
               $('#container').fadeOut('fast', function() 
               {

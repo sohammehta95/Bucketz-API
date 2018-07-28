@@ -30,6 +30,11 @@ app.get('/help', function(req, res){
     res.render("help.ejs");
 });
 
+app.get('/close', function(req, res){
+    res.render("close.ejs");
+});
+
+
 app.use('/signup', signupRoutes);
 app.use('/api/users', userRoutes);
 app.use('/plaid', plaidRoutes);
